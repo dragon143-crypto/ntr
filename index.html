@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dragon</title>
+
+   <style>    .scrolling-text {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+    }
+
+    .scrolling-text p {
+      display: inline-block;
+      animation: scroll 10s linear infinite;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+
+</style>
+</head>
+
+<style>
+
+   body{
+      height: 100vh;
+      background-color:white;
+      background-image: url("https://www.bollywoodhungama.com/wp-content/uploads/2019/03/Jr-NTR.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+   }
+   .container{
+      background-color: whitesmoke;
+      width:40%;   
+   }
+   .form-field input, .from-field select{
+       
+    width: 100% ;
+    padding: 10px  0px
+   }
+   button{
+      width:100%;
+      padding:10px;
+      background-color:black;
+      color:white;
+      font-size: 1.3rem;
+   }
+   
+  
+</style>
+<body>
+ 
+ <div class="scrolling-text">
+      <p>This is the login page to access our services please enter correct details ....</p>
+    </div>
+    <h1>signup</h1>
+    <form class="container" action="./login.html">
+    <p class="form-field">
+    <input type="text" 
+    required placeholder="enter your name"/>
+    </p>
+    <P class="form-field">
+    <input type="email" required
+     placeholder="enter your email id"/>
+     </P>
+     <p class="form-field">
+        <input type="password"required
+        placeholder="Enter your password"/>
+     </p>
+     <p class="form-field">
+        <input type="radio" name="gender"/>male
+        <input type="radio" name="gender"/ >female
+        <input type="radio" name="gender"/>others
+        <input type="date"/>
+     </p>
+     <select>
+        <option value="">slect your city</option>
+        <option value="">vijayawada</option>
+        <option vale="">machilipatnam</option>
+        <option vale="">vizag</option>
+        <option value="">gudlavalleru</option>
+        <option value="">mumbai</option>
+     </select>
+     <p class="form-field">
+        <textarea placeholder="enter your address">
+
+        </textarea>
+     </p>
+     <button>submit</button>
+     </form>
+</body>
+</html>
